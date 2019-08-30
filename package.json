@@ -12,7 +12,9 @@
     "react-native": "0.60.5",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-iphone-x-helper": "^1.2.1",
+    "react-native-qrcode": "^0.2.7",
     "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "^6.11.0",
     "styled-components": "^4.3.2",
     "ws": "^3.3.1"
   },
