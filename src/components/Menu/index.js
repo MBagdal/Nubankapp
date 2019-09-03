@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Animated } from 'react-native';
 
-//import QRCode from 'react-native-qrcode';
 import { 
     Container, 
     Code,
@@ -13,17 +13,15 @@ import {
     
 } from './style';
 
-export default function Menu () {
+export default function Menu ({ translateY }) {
     return (
-        <Container>
-            <Code>
-                {/* <QRCode
-                    value="https://google.com.br"
-                    size="{80}"
-                    bgColor="#fff"
-                    fgColor="8b10ae"
-                /> */}
-            </Code>
+        <Container style={{
+            opacity: translateY.interpolate({
+              inputRange: [0, 280],
+              outputRange: [0, 0.8],
+            }),
+          }}
+        >
             <Nav>
                 <NavItem>
                     <Icon name="help-outline" size={20} color="#fff"/>
