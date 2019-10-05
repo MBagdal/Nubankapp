@@ -68,22 +68,22 @@ export default function Card ( { translateY } ) {
                     extrapolate: 'clamp'
                 })}]
             }}>
-                <CardHeader>
-                    <Icon name="attach-money" size={24} color="#666"/>
-                    <Icon name="visibility-off" size={24} color="#666"/>
-                </CardHeader>
-                <CardContent>
-                    <Description>
-                        R$ 192.007,45
-                    </Description>
-                    <Title>
-                        Bem vindo a sua NuConta:
-                    </Title>
-                </CardContent>
-                <CardFooter>
-                    <Annotation>Depósito de R$ 192.007,45, recebido quinta-feira às 14:47.</Annotation>
-                </CardFooter>
-            </Container>        
+            <CardHeader>
+                <Icon name="attach-money" size={24} color="#666"/>
+                <Icon name="visibility-off" size={24} color="#666"/>
+            </CardHeader>
+            <CardContent>
+                <Description>
+                    R$ 192.007,45
+                </Description>
+                <Title>
+                    Bem vindo a sua NuConta:
+                </Title>
+            </CardContent>
+            <CardFooter>
+                <Annotation>Depósito de R$ 192.007,45, recebido quinta-feira às 14:47.</Annotation>
+            </CardFooter>
+        </Container>        
         </PanGestureHandler>
     );
 }
