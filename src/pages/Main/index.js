@@ -1,5 +1,4 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Animated }    from 'react-native';
 
 import Header from '../../components/Header';
@@ -23,7 +22,7 @@ export default function main() {
                 <Menu translateY={ translateY }/>
                 <Card translateY={ translateY }/>
             </Content>
-            <Tabs />
+            <Tabs translateY={ translateY } />
         </Container>
     );
 };
